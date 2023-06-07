@@ -1,8 +1,8 @@
 ---
-title: "Exercise #X"
-subtitle: "Fortgeschrittene Statistische Software für NF - SS 2022/23"
+title: 'Exercise #X'
 author: "Name (Martrikelnummer), Name (Martrikelnummer), ..."
 date: "`r Sys.Date()`"
+subtitle: "Fortgeschrittene Statistische Software für NF - SS 2022/23"
 ---
 
 ## General Remarks
