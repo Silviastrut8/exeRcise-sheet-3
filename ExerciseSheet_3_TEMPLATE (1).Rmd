@@ -44,20 +44,18 @@ c)  For all of the following tasks in this exercise sheet we ask you to
 d)  Name 2 strengths and 2 weaknesses of git. (Don't forget to create a
     commit after this answer, see *1c*)
     
-# 2 strengths of git:
+2 strengths of git:
 
 - Git allows you to track and look at all the changes you've made to your code or text.
 
 - Git allows you to collaborate with other people within one document. You can see who made changes to a code or text and you can also make changes, which can be observed by the others.
 
 
-# 2 weaknesses of git:
+2 weaknesses of git:
 
 - In case of more than one person working on a document and for example making different changes to the same part of the same codebase, conflicts can appear. To resolve those conflicts, it takes time and it can be tricky to solve these problems. 
 
 - It can be quite difficult for people who only just got to know Git to learn and understand the concepts of Git fast. It often takes a bit of time to use Git effectively because of it's high complexity.
-
-
 
 
 
