@@ -107,7 +107,11 @@ library(tidyverse)
 
   
 ```{r}
-name_2021 <- 
+name_2021 <- read_csv(file.path("vornamen_2021.csv"))
+```
+
+```{r}
+name_2022 <- read_csv(file.path("open_data_portal_2022.csv"))
 ```
 
 
