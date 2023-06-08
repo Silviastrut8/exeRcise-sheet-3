@@ -122,11 +122,6 @@ c)  Calculate the total number of babies born in Munich in 2022
 View(name_2021)
 View(name_2022)
 ```
-
-```{r}
-
-```
-
 d)  Add a new column `year` to both datasets which holds the correct
     year for each.
 
