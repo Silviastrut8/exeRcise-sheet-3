@@ -249,15 +249,49 @@ tax_data \<- data.frame( Name = c("Munich GmbH", "ABC Inc.", "Backpacks
 Tax_2020 = c(4800, 4200, 5800, 3700), Tax_2021 = c(5200, 3800, 5900,
 3400) )
 
+```{r}
+tax_data <- data.frame(
+ Name = c("Munich GmbH", "ABC Inc.", "Backpacks 1980", "Bavarian Circus"),
+ Tax_2019 = c(5000, 4000, 6000, 3500),
+ Tax_2020 = c(4800, 4200, 5800, 3700), 
+ Tax_2021 = c(5200, 3800, 5900,3400) 
+ )
+```
+
+
 ###Calculate column-wise means
 
 column_means \<- lapply(tax_data\[, -1\], 2, mean)
 
 column_means
 
+
+My prompts:
+The following code doesn' t work in R Studio.  What is the correct apply function to use here?          column_means \<- lapply(tax_data\[, -1\], 2, mean)
+
+
+The code seems to have an error in the usage of the lapply function. The code doesn't work, because the second argument should be a function, not a numeric value. Assuming we want to calculate the column means for each column in the tax_data data frame, but without the first column (because of [, -1]), we should use the sapply function instead. In this code, sapply applies the mean function to each column of tax_data[, -1] and returns a vector of column means.
+
+```{r}
+column_means <- sapply(tax_data[, -1], mean)
+
+column_means
+```
+My prompt:
+And how do i calculate the "rowwise means" for this?
+
+
+```{r}
+row_means <- rowMeans(tax_data[, -1])
+
+row_means
+```
+
+
 b)  Using ChatGPT try to understand what the rapply() function does.
     Create an easy example with mock data where the function is used and
     explain it in your words.
+    
 
 ## Final Note
 
