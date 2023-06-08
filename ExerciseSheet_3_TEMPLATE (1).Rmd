@@ -189,6 +189,22 @@ In 2021 more babies were born in Munich than in 2022.
 
 d)  Add a new column `year` to both datasets which holds the correct
     year for each.
+    
+```{r}
+jahr <- 2021
+
+name_2021$year <- jahr
+
+View(name_2021)
+```
+
+```{r}
+jahr_2 <- 2022
+
+name_2022$year <- jahr_2
+
+View(name_2022)
+```
 
 e)  Combine both datasets into one using `bind_rows()`.
 
