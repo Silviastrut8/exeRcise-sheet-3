@@ -125,6 +125,17 @@ is.numeric(name_2021$Anzahl)
 ```{r}
 is.numeric(name_2022$Anzahl)
 ```
+```{r}
+name_2021$Anzahl <- as.numeric(name_2021$Anzahl)
+```
+```{r}
+name_2022$Anzahl <- as.numeric(name_2022$Anzahl)
+```
+```{r}
+View(name_2021)
+
+View(name_2022)
+```
 
 
 
