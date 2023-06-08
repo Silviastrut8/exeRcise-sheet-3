@@ -137,7 +137,7 @@ View(name_2021)
 View(name_2022)
 ```
 
-
+I changed the type of the variable "Anzahl" in both datasets to "numeric" with the function "as.numeric". The consequence of this is that NAs ("missings") were created because of the change so some of the values of the variable were eliminated. 
 
 
 
