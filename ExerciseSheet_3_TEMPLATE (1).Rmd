@@ -291,7 +291,38 @@ row_means
 b)  Using ChatGPT try to understand what the rapply() function does.
     Create an easy example with mock data where the function is used and
     explain it in your words.
-    
+
+
+My prompt:
+Create an easy example with mock data where this function is used.
+
+```{r}
+# Create a nested list of student scores
+scores <- list(
+  math = c(90, 85, 95),
+  science = c(80, 92, 88),
+  english = c(78, 90, 85)
+)
+
+# Define a function to add a bonus to scores
+add_bonus <- function(x) {
+  if (is.numeric(x)) {
+    x + 5
+  } else {
+    x
+  }
+}
+
+# Apply the add_bonus function using rapply()
+scores_with_bonus <- rapply(scores, add_bonus, how = "replace")
+
+# Print the result
+print(scores_with_bonus)
+
+```
+
+In this example there was created a nested list that contains the scores in different subjects from different students. Afterwards there was created function, that can add five points to every single score. With the help of the "rapply function", these five points were added to each element, so each score, in this list. The "rapply function" contained the function "add_bonus" that was created before. 
+With the "how" - function in the "rapply"- function it was made sure, that the original scores are replaced by the new scores with the five point bonus.
 
 ## Final Note
 
