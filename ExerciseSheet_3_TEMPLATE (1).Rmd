@@ -96,6 +96,20 @@ b)  Load the data for both years into R. Check the type of the count
     not numeric? Fix the problem in an appropriate manner, it is OK if
     some of the counts are inaccurate because of this. Explain your
     solution and the repercussions.
+    
+```{r}
+.libPaths("C:\\Users\\silvi\\Documents\\Rlibrary")
+```
+
+```{r}
+library(tidyverse)
+```
+
+  
+```{r}
+name_2021 <- 
+```
+
 
 c)  Calculate the total number of babies born in Munich in 2022
     and 2021. Which year had the bigger baby-boom?
