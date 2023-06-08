@@ -155,6 +155,36 @@ sum_2021
 ```{r}
 sum_2022
 ```
+```{r}
+name_2021_2 <- na.omit(name_2021$Anzahl)
+name_2022_2 <- na.omit(name_2022$Anzahl)
+```
+
+```{r}
+View(name_2021_2)
+```
+
+```{r}
+name_2021 <- name_2021[complete.cases(name_2021$Anzahl), ]
+name_2022 <- name_2022[complete.cases(name_2022$Anzahl), ]
+```
+
+```{r}
+View(name_2021)
+View(name_2022)
+```
+
+```{r}
+sum_2021 <- sum(name_2021$Anzahl)
+sum_2022 <- sum(name_2022$Anzahl)
+
+sum_2021
+#11524
+
+sum_2022
+#9899
+```
+In 2021 more babies were born in Munich than in 2022.
 
 
 d)  Add a new column `year` to both datasets which holds the correct
